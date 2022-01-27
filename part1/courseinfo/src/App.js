@@ -12,8 +12,7 @@ const Content = (props) => {
   const parts=props.parts.map(item => {return <Part part={item}/>})
   console.log(parts)
 
-  return( <div>
-        {parts}
+  return( <div> {parts}
       </div>
   )
 }
@@ -22,7 +21,7 @@ const Total = (props) => {
   let exercises_number= 0 ;
   props.parts.forEach( item => { exercises_number+=item.exercises});
 
-  return <p>Number of exercises {exercises_number}</p>
+  return <p> Number of exercises {exercises_number} </p>
 }
 
 
